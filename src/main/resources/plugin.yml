@@ -1,0 +1,20 @@
+name: CompassTrack
+version: '${version}'
+main: org.vwtfafa.compassTrack.CompassTrack
+api-version: '1.20'
+commands:
+  track:
+    description: Lass deinen Kompass auf einen anderen Spieler zeigen oder schalte das Tracking aus.
+    usage: /track <Spieler|off>
+    permission: compassTrack.use
+    permission-message: Du hast keine Berechtigung für diesen Befehl!
+permissions:
+  compassTrack.use:
+    description: Erlaubt das Nutzen des Kompass-Tracking-Befehls (/track)
+    default: op
+  compassTrack.bypasscooldown:
+    description: Erlaubt das Umgehen des Cooldowns beim Tracking
+    default: op
+  compassTrack.trackable:
+    description: Spieler mit dieser Permission können überhaupt getrackt werden
+    default: true
